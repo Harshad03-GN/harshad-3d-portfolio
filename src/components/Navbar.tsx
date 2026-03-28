@@ -42,17 +42,17 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          AM
+        <a href="/#" className="navbar-title" data-cursor="disable" data-no-animation="true" style={{ display: 'block', overflow: 'visible', height: 'auto' }}>
+          <span style={{ display: 'inline-block', opacity: 1, transform: 'none' }}>HN</span>
         </a>
         <a
-          href="https://www.linkedin.com/in/akashrmalhotra/"
+          href="https://www.linkedin.com/in/harshad-g-naik-527819249"
           className="navbar-connect"
           data-cursor="disable"
           target="_blank"
           rel="noreferrer"
         >
-          linkedin.com/in/akashrmalhotra
+          linkedin.com/harshad-g-naik
         </a>
         <ul>
           <li>

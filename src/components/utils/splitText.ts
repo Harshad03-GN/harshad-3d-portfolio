@@ -13,8 +13,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 export default function setSplitText() {
   ScrollTrigger.config({ ignoreMobileResize: true });
   if (window.innerWidth < 900) return;
-  const paras: NodeListOf<ParaElement> = document.querySelectorAll(".para");
-  const titles: NodeListOf<ParaElement> = document.querySelectorAll(".title");
+  const paras: NodeListOf<ParaElement> = document.querySelectorAll(".para:not([data-no-animation='true'])");
+  const titles: NodeListOf<ParaElement> = document.querySelectorAll(".title:not([data-no-animation='true'])");
 
   const TriggerStart = window.innerWidth <= 1024 ? "top 60%" : "20% 60%";
   const ToggleAction = "play pause resume reverse";
