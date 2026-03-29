@@ -5,32 +5,28 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
+    title: "Infrastructure as Code",
+    category: "Cloud Automation",
+    tools: "Terraform, Ansible, Vagrant",
+    image: "/images/collage.png", 
+  },
+  {
     title: "Microservice CI/CD Pipeline",
     category: "DevOps & Container Orchestration",
     tools: "Jenkins, Docker, Kubernetes, Terraform, Helm",
-    image: "/images/placeholder.webp",
-    link: "#",
-  },
-  {
-    title: "Infrastructure as Code",
-    category: "Cloud Automation",
-    tools: "Terraform, AWS CloudFormation, Ansible, Vagrant",
-    image: "/images/placeholder.webp",
-    link: "#",
+    image: "/images/microservice.png",
   },
   {
     title: "Cloud Deployment & Scaling",
     category: "AWS & Azure Infrastructure",
     tools: "AWS (EC2, S3, CloudFormation), Azure AKS, Monitoring",
-    image: "/images/placeholder.webp",
-    link: "#",
+    image: "/images/collage1.png",
   },
   {
     title: "GitHub Actions Automation",
     category: "CI/CD Pipeline Automation",
     tools: "GitHub Actions, Docker, Security Scanning, Deployment",
-    image: "/images/placeholder.webp",
-    link: "#",
+    image: "/images/collage3.png",
   },
 ];
 
@@ -116,7 +112,6 @@ const Work = () => {
                       <WorkImage
                         image={project.image}
                         alt={project.title}
-                        link={project.link}
                       />
                     </div>
                   </div>
